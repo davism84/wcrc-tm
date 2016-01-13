@@ -1,0 +1,47 @@
+# The relative path to the VCF file you want to load
+VCF_FILE=TCGA-BH-A18J_D_IlluminaGA-DNASeq_exome.vcf
+
+# The relative path to the subject-sample-mapping file
+# This file is a tab-separated file, with two columns, containing
+#		subject_id as known in clinical data in the first column;
+#		sample_id as known in VCF file in the second column
+SUBJECT_SAMPLE_MAPPING_FILE=subject_sample_mapping.txt
+
+# A (temp) directory where the output files from parsing the file
+# will be stored. Must be writable by the current user
+VCF_TEMP_DIR=~/tmp/vcf/parsed-data
+
+
+# Short textual description of the source of the data
+DATASOURCE=TCGA
+
+# Initials of the user that is loading this dataset, for future reference
+ETL_USER=MKD
+
+
+# Unique identifier for the current dataset
+DATASET_ID=TCGA-BR-INDEL-WUSTL
+
+# Study identifier as it is used in the clinical data. Is used to look up the subjects
+STUDY_ID=TCGA-Breast
+
+# Concept path to store the VCF data in the clinical data tree.
+# The concept path must be specified completely, where parts of the
+# path are separated by the \ sign. The path must NOT start with a
+# slash.
+# For example: Public Studies\GSE8581\Genomic Variants
+# N.B. Use quotes around the parameter if it contains spaces and
+#      escape the slashes
+CONCEPT_PATH="Public Studies\\TCGA-Breast\\vcf"
+
+
+# Identifier for the genome build that is used as a reference
+GENOME_BUILD=grch37-lite
+
+# Identifier for the platform to use. A platform for VCF currently
+# only describes the genome build. If unsure, use 'VCF_<genome_build>'
+GPL_ID=VCF_$GENOME_BUILD
+#GPL_ID=illuminaga_dnaseq
+
+export VCF_FILE SUBJECT_SAMPLE_MAPPING_FILE VCF_TEMP_DIR DATASOURCE ETL_USER \
+		DATASET_ID STUDY_ID CONCEPT_PATH GENOME_BUILD GPL_ID
