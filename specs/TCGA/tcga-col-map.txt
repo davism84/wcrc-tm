@@ -1,4 +1,4 @@
-Filename	Category Code	Column Number	Data Label	Data Label Source	Controlled Vocab Code	Ignored Column
+Filename	Category Code	Column Number	Data Label	Data Label Source	Controlled Vocab Code	Source Column
 tcga-breast-BH.txt	Other Columns	1	STUDY ID			
 tcga-breast-BH.txt	OMIT	2	OMIT			bcr_patient_uuid
 tcga-breast-BH.txt	Other Columns	3	SUBJ_ID			bcr_patient_barcode
@@ -12,7 +12,7 @@ tcga-breast-BH.txt	Patient	10	RACE			race
 tcga-breast-BH.txt	Patient	11	Ethnicity			ethnicity
 tcga-breast-BH.txt	Patient	12	History of Other Malignancy			history_other_malignancy
 tcga-breast-BH.txt	Treatment+TherapeuticProcedure+Chemotherapy+AdjuvantChemotherapy	13	Neoadjuvant Treatment			history_neoadjuvant_treatment
-tcga-breast-BH.txt	Disease Phenotype+Tumor Phenotype	14	Tumor Status			tumor_status
+tcga-breast-BH.txt	Outcome	14	Tumor Status			tumor_status
 tcga-breast-BH.txt	Outcome	15	Vital Status			vital_status
 tcga-breast-BH.txt	Episode+Follow Up Episode	16	Days to Last Followup			last_contact_days_to
 tcga-breast-BH.txt	Outcome	17	Days to Death			death_days_to
