@@ -1,4 +1,4 @@
-Filename	Category Code	Column Number	Data Label	Data Label Source	Controlled Vocab Code	Ignored Column
+Filename	Category Code	Column Number	Data Label	Data Label Source	Controlled Vocab Code	Source Column
 CR-Breast-2015-11-09.tsv	Other Columns	1	STUDY ID			
 CR-Breast-2015-11-09.tsv	Other Columns	2	SUBJ_ID			SUBJ_ID
 CR-Breast-2015-11-09.tsv	Other Columns	3	SAMPLE_ID			SAMPLE_ID
